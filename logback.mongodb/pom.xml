@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>logback.mongodb</groupId>
 	<artifactId>logback.mongodb</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<name>Logback appender for mongoDB</name>
 
 	<developers>
@@ -31,9 +31,9 @@
 
 	<properties>
 		<java.version>1.6</java.version>
-		<logback.version>1.0.0</logback.version>
-		<mongodb.version>2.7.3</mongodb.version>
-		<slf4j.version>1.6.4</slf4j.version>
+		<logback.version>1.0.6</logback.version>
+		<mongodb.version>2.8.0</mongodb.version>
+		<slf4j.version>1.6.5</slf4j.version>
 
 		<maven.assembly.plugin>2.3</maven.assembly.plugin>
 		<maven.clean.plugin>2.4.1</maven.clean.plugin>
@@ -74,6 +74,17 @@
 			<version>${mongodb.version}</version>
 		</dependency>
 	</dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://172.16.3.46:8081/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>releases</id>
+            <url>http://172.16.3.46:8081/nexus/content/repositories/releases</url>
+        </repository>
+    </distributionManagement>
 
 	<build>
 		<pluginManagement>
