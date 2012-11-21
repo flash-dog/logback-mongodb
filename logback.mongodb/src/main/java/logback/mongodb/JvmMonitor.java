@@ -76,7 +76,7 @@ public class JvmMonitor {
         logEntry.append("level", "info");
         logEntry.append("pid", getPid());
         logEntry.append("ip", getIp());
-
+        logEntry.append("className", "org.log4mongo.contrib.JvmMonitor");
         connectionSource.getDBCollection().insert(logEntry);
         if(logToLocal){
             System.out.println(String.format("%s %s", now, message));
