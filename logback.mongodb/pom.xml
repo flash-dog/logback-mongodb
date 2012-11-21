@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>logback.mongodb</groupId>
 	<artifactId>logback.mongodb</artifactId>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<name>Logback appender for mongoDB</name>
 
 	<developers>
